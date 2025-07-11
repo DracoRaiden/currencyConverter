@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currency Converter</title>
-    <link rel="stylesheer" href="style.css">
+    <link rel="stylesheet" href="style.css">
     </link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -13,43 +13,49 @@
 </head>
 
 <body>
-    <div id="heading">
-        <h2>Currency Converter</h2>
-    </div>
-    <form>
-        <div id="user-input">
-            <p>Enter Amount</p>
-            <input value="100" type="text">
+    <div class="container">
+        <div id="heading">
+            <h2>Currency Converter</h2>
         </div>
-        <div class="exchange">
-            <div id="from">
-                <p>From</p>
-                <img src="https://flagsapi.com/US/flat/64.png"></img>
-                <select name="From">
-                    <option>USD</option>
-                    <option>PKR</option>
-                    <option>INR</option>
-                    <option>EUR</option>
-                </select>
+        <form>
+            <div id="user-input">
+                <p>Enter Amount</p>
+                <input value="100" type="text">
             </div>
-            <div id="sign">
-                <i class="fa-solid fa-arrow-right-arrow-left"></i>
-            </div>
-            <div id="to">
-                <p>To</p>
-                <img src="https://flagsapi.com/PK/flat/64.png"></img>
-                <select name="To">
-                    <option>PKR</option>
-                    <option>USD</option>
-                    <option>INR</option>
-                    <option>EUR</option>
-                </select>
+            <div class="exchange">
+                <div id="from">
+                    <p class = "head">From</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/US/flat/64.png"></img>
+                        <select name="From">
+                            <option>USD</option>
+                            <option>PKR</option>
+                            <option>INR</option>
+                            <option>EUR</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="sign">
+                    <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                </div>
+                <div id="to">
+                    <p class = "head">To</p>
+                    <div class="select-container">
+                        <img src="https://flagsapi.com/PK/flat/64.png"></img>
+                        <select name="To">
+                            <option>PKR</option>
+                            <option>USD</option>
+                            <option>INR</option>
+                            <option>EUR</option>
+                        </select>
+                    </div>
+                </div>
             </div>
             <div class="exchange-rate">
                 <p>1USD = 290PKR</p>
                 <button>Get Exchange Rate</button>
             </div>
-        </div>
+    </div>
     </form>
 </body>
 
