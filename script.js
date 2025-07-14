@@ -8,6 +8,7 @@ let btn = document.querySelector("form button");
 let fromCurrency = document.querySelector("#from select");
 let toCurrency = document.querySelector("#to select");
 let msg = document.querySelector("#msg p");
+let date;
 
 // Adding all options in the dropdown menus
 for (let select of dropdowns) {
@@ -45,6 +46,7 @@ const updateRate = async () => {
     let fromRate = data.eur[`${fromCurrency.value.toLowerCase()}`];
     let toRate = data.eur[`${toCurrency.value.toLowerCase()}`];
     let exrate = toRate / fromRate;
+    date = data.date;
     exrate = exrate.toFixed(3);
     return exrate;
 }
@@ -58,7 +60,7 @@ const checkVal = (amount) => {
 
 // Update msg
 const updateMsg = (exrate, amt) => {
-    rate.innerText = `1 ${fromCurrency.value} = ${exrate} ${toCurrency.value}`;
+    rate.innerText = `1 ${fromCurrency.value} = ${exrate} ${toCurrency.value}, (${date})`;
     let finalAmount = amt.value * exrate;
     msg.innerText = `${amt.value} ${fromCurrency.value} = ${finalAmount} ${toCurrency.value}`;
 }
