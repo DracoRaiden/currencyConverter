@@ -30,7 +30,7 @@ This is a fully functional, real-time **Currency Converter** web application bui
 
 ## 📸 Screenshots
 
-Check the /docs folder to view the live demo of this project
+Check the [/docs](https://github.com/DracoRaiden/currencyConverter/tree/main/docs) folder to view the live demo of this project
 
 ## 🧪 To Do / Future Enhancements
 
