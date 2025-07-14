@@ -24,14 +24,10 @@
             </div>
             <div class="exchange">
                 <div id="from">
-                    <p class = "head">From</p>
+                    <p class="head">From</p>
                     <div class="select-container">
                         <img src="https://flagsapi.com/US/flat/64.png"></img>
                         <select name="From">
-                            <option>USD</option>
-                            <option>PKR</option>
-                            <option>INR</option>
-                            <option>EUR</option>
                         </select>
                     </div>
                 </div>
@@ -39,24 +35,26 @@
                     <i class="fa-solid fa-arrow-right-arrow-left"></i>
                 </div>
                 <div id="to">
-                    <p class = "head">To</p>
+                    <p class="head">To</p>
                     <div class="select-container">
                         <img src="https://flagsapi.com/PK/flat/64.png"></img>
                         <select name="To">
-                            <option>PKR</option>
-                            <option>USD</option>
-                            <option>INR</option>
-                            <option>EUR</option>
                         </select>
                     </div>
                 </div>
             </div>
             <div class="exchange-rate">
-                <p>1USD = 290PKR</p>
+                <p id = "rate">1USD = 290PKR</p>
                 <button>Get Exchange Rate</button>
             </div>
+            <div id = "msg">
+                <p>No conversions yet!</p>
+            </div>
+        </form>
     </div>
-    </form>
 </body>
+
+<script src="codes.js"></script>
+<script src="script.js"></script>
 
 </html>
